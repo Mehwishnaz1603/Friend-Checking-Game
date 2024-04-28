@@ -1,10 +1,12 @@
-import inquirer from "inquirer";
-let isFriend = await inquirer.prompt([{
-        name: "name", type: "string", message: "Enter your Friend name:",
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var inquirer_1 = require("inquirer");
+var isFriend = await inquirer_1.default.prompt([{
+        name: "Friendname", type: "string", message: "Enter your Friend name:",
     }]);
-if (isFriend.name === "Mehwishnaz" || isFriend.name === "Noorulain") {
-    console.log(` ${isFriend.name} is your Friend`);
+if (isFriend.Friendname === "Mehwishnaz" || isFriend.Friendname === "Noorulain") {
+    console.log(" ".concat(isFriend.Friendname, " is your Friend"));
 }
 else {
-    console.log(` ${isFriend.name} is not your Friend`);
+    console.log(" ".concat(isFriend.Friendname, " is not your Friend"));
 }
